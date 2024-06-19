@@ -1,42 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Portifólio</title>
-	</head>
-	<body>
-		<nav>
-			<ul>
-				<li>
-					<a href="index.html"> Home </a>
-				</li>
-				<li>
-					<a href="contato.html"> Contato </a>
-				</li>
-			</ul>
-		</nav>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="contato.html">Contato</a></li>
+		</ul>
+	</nav>
 
-		<section>
+	<section>
+		<div>
 			<h1>Sobre mim</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, tempore eos est fugit corporis,
-				rerum earum, et deserunt consectetur id illum! Minus ipsam iusto ea excepturi voluptate porro vero aliquid!
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, tempore eos est fugit corporis,
-				rerum earum, et deserunt consectetur id illum! Minus ipsam iusto ea excepturi voluptate porro vero aliquid!</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, tempore eos est fugit corporis,
-				rerum earum, et deserunt consectetur id illum! Minus ipsam iusto ea excepturi voluptate porro vero aliquid!
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, tempore eos est fugit corporis,
-				rerum earum, et deserunt consectetur id illum! Minus ipsam iusto ea excepturi voluptate porro vero aliquid!
-			</p>
+			<div class="about-me">
+				<img src="assets/Foto.jpg" alt="Foto do criador desse conteúdo">
+				<div>
+					<p>
+						Olá, meu nome é Ericles Piana, tenho 24 anos e sou fascinado por desafios e solução de problemas.
+						Iniciei minha jornada como técnico em mecânica industrial, mas foi durante as aulas de robótica que meu interesse 
+						pela tecnologia despertou, especialmente ao trabalhar com Arduino. 
+						Aos 22 anos, decidi deixar minha cidade natal no interior da Bahia em busca de oportunidades no Rio de Janeiro, 
+						impulsionado por uma bolsa de estudos que conquistei na PUC. Através dela, 
+						comecei meu estudo no curso de Ciência da Computação, porém, buscando uma abordagem mais prática e inovadora,
+						encontrei meu caminho na 42 Rio. Na 42, mergulhei em um ambiente de aprendizado colaborativo e imersivo, 
+						onde desenvolvi não apenas habilidades técnicas, mas também competências como resiliência e trabalho em equipe.
+					</p>
+					<p>
+						Em 2024, busquei novos desafios e me transferi para a 42 São Paulo, 
+						onde tive o prazer de conhecer a Generation Brasil, que me proporcionou uma visão mais abrangente das tecnologias 
+						utilizadas no mercado, aprimorando minhas habilidades em Java com Spring, Git Flow, MySQL, React e muito mais.
+						Com a 42 e as habilidades proporcionadas pela Generation, estou pronto para enfrentar os desafios do mercado de 
+						trabalho com confiança e determinação.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
 	
-			<img src="assets/Foto.jpg" alt="Foto do criador desse conteúdo">
-	
-			<h2>Meu vídeo predileto: </h2>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/PBGmZs4fENU?si=QPhihmGS7lfFpk9Q" 
+	<section>
+		<div>
+			<h2 class="sec-titles">Meu vídeo predileto:</h2>
+			<iframe id="video-iframe" width="560" height="315" src="https://www.youtube.com/embed/PBGmZs4fENU?si=QPhihmGS7lfFpk9Q" 
 				title="YouTube video player" frameborder="0" 
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
 				referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
 			</iframe>
-		</section>
-	</body>
+		</div>
+	</section>
+</body>
 </html>

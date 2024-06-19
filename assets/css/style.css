@@ -1,0 +1,139 @@
+/* style.css */
+
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #FAFAFA;
+    color: #333333;
+}
+
+/* Estilo do cabeçalho de navegação (NavBar)*/
+nav {
+    background-color: #273B09;
+    padding: 10px 0;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #DBD2E0;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: #7B904B;
+}
+section {
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+/*Formatação títulos principais*/
+h1 {
+    text-align: center;
+    color: #131313;
+}
+
+/*Formatação títulos secundários*/
+.sec-titles{
+    text-align: center;
+    color: #131313;
+}
+
+/*Formatação dos parágrafos*/
+p {
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: -8px;
+}
+
+/*Formatação do texto sobre mim*/
+.about-me {
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    gap: 20px; /* Espaço entre os itens */
+}
+
+/*Formatação imagem sobre mim*/
+.about-me img{
+    width: 200px; /* Largura da imagem */
+    height: 200px; /* Altura da imagem */
+    border-radius: 50%; /* Borda arredondada para criar um círculo */
+    border: 4px solid #7B904B; /* Borda ao redor da imagem */
+    display: block; /* Remove espaços extras ao redor da imagem */
+    margin: 10px auto; /* Margens automáticas para centralizar horizontalmente */
+}
+
+/*Formatação dos iframes*/
+iframe {
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    border: 5px solid #7B904B;
+}
+
+#video-iframe{
+    border: 3px solid #7B904B;
+}
+
+#map-iframe {
+    border: 3px solid #4B7B90;
+}
+
+/*-------------------------------
+Formatação específica contato.html
+---------------------------------*/
+form {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border: 2px solid #DDDDDD;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/*Formatação de cada campo do forms*/
+.form-group {
+    margin-bottom: 20px;
+}
+
+/*Formatação das labels do forms*/
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333333;
+}
+
+/*Formatação das áreas de input*/
+.form-group input, .form-group textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/*Formatação do botão*/
+.form-group button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #7B904B;
+    color: #FFFFFF;
+    font-size: 16px;
+    cursor: pointer; /*Muda o cursor para maozinha quando o mouse passa por cima*/
+}
+.form-group button:hover{
+    background-color: #668A3D;
+}
