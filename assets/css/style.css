@@ -1,120 +1,97 @@
-/* style.css */
-
 /* Estilo geral do corpo */
 body {
     font-family: Arial, sans-serif;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     background-color: #FAFAFA;
     color: #333333;
 }
 
-/* Estilo do cabeçalho de navegação (NavBar)*/
+/* Estilo do cabeçalho de navegação (NavBar) */
 nav {
     background-color: #273B09;
     padding: 10px 0;
 }
+
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     text-align: center;
 }
+
 nav ul li {
     display: inline;
     margin: 0 15px;
 }
+
 nav ul li a {
     text-decoration: none;
     color: #DBD2E0;
     font-weight: bold;
 }
+
 nav ul li a:hover {
     color: #7B904B;
 }
+
+/* Estilos para seção principal */
 section {
     padding: 30px;
     max-width: 800px;
     margin: 0 auto;
     margin-bottom: 15px;
+    background-color: #FFFFFF;
+    border: 2px solid #DDDDDD;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/*Formatação títulos principais*/
-h1 {
+/* Formatação dos títulos principais e secundários */
+h1, .sec-titles {
     text-align: center;
     color: #131313;
 }
 
-/*Formatação títulos secundários*/
-.sec-titles{
-    text-align: center;
-    color: #131313;
-}
-
-/*Formatação dos parágrafos*/
+/* Formatação dos parágrafos */
 p {
     line-height: 1.6;
-    text-align: center;
-    margin-bottom: -8px;
+    text-align: justify;
 }
 
-/*Formatação do texto sobre mim*/
-.about-me {
-    align-items: center; /* Alinha os itens verticalmente no centro */
-    gap: 20px; /* Espaço entre os itens */
-}
-
-/*Formatação imagem sobre mim*/
-.about-me img{
-    width: 200px; /* Largura da imagem */
-    height: 200px; /* Altura da imagem */
-    border-radius: 50%; /* Borda arredondada para criar um círculo */
-    border: 4px solid #7B904B; /* Borda ao redor da imagem */
-    display: block; /* Remove espaços extras ao redor da imagem */
-    margin: 10px auto; /* Margens automáticas para centralizar horizontalmente */
-}
-
-/*Formatação dos iframes*/
-iframe {
+/* Formatação da imagem de perfil */
+.about-me img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid #7B904B;
     display: block;
-    margin: 20px auto;
-    border-radius: 8px;
-    border: 5px solid #7B904B;
+    margin: 10px auto;
 }
 
-#video-iframe{
-    border: 3px solid #7B904B;
-}
-
-#map-iframe {
-    border: 3px solid #4B7B90;
-}
-
-/*-------------------------------
-Formatação específica contato.html
----------------------------------*/
+/* Estilos para o formulário de contato */
 form {
     background-color: #FFFFFF;
     padding: 20px;
     border: 2px solid #DDDDDD;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-/*Formatação de cada campo do forms*/
 .form-group {
     margin-bottom: 20px;
 }
 
-/*Formatação das labels do forms*/
 .form-group label {
     display: block;
     margin-bottom: 5px;
     color: #333333;
 }
 
-/*Formatação das áreas de input*/
-.form-group input, .form-group textarea{
+.form-group input,
+.form-group textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #CCCCCC;
@@ -123,8 +100,7 @@ form {
     font-size: 16px;
 }
 
-/*Formatação do botão*/
-.form-group button{
+.form-group button {
     width: 100%;
     padding: 10px;
     border: none;
@@ -132,8 +108,48 @@ form {
     background-color: #7B904B;
     color: #FFFFFF;
     font-size: 16px;
-    cursor: pointer; /*Muda o cursor para maozinha quando o mouse passa por cima*/
+    cursor: pointer;
 }
-.form-group button:hover{
+
+.form-group button:hover {
     background-color: #668A3D;
 }
+
+/* Estilos para o mapa */
+#map-iframe {
+    width: 100%;
+    height: 300px;
+    border: 3px solid #4B7B90;
+    border-radius: 8px;
+}
+
+/* Estilos para o video */
+#video-iframe {
+    display: block;
+    height: 300px;
+    border: 3px solid #7B904B;
+    border-radius: 8px;
+    margin: 15px auto;
+}
+
+/* Media query para telas menores 
+@media (max-width: 768px) {
+    section {
+        padding: 20px;
+    }
+    .form-group button,
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px;
+    }
+}
+@media (max-width: 480px) {
+    section {
+        padding: 10px;
+    }
+    .form-group button,
+    .form-group input,
+    .form-group textarea {
+        font-size: 12px;
+    }
+}*/
